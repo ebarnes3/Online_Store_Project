@@ -1,67 +1,21 @@
-// Styling for the navbar
-#mainNav {
+.navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  @include heading-font;
+  background-color: fade-out($black, 0.3);
   .navbar-brand {
-    color: $white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
   }
   .navbar-nav {
-    margin-top: 1rem;
-    letter-spacing: 0.0625rem;
-    li.nav-item {
-      a.nav-link {
-        color: $white;
-        &:hover {
-          color: $primary;
-        }
-        &:active,
-        &:focus {
-          color: $white;
-        }
-        &.active {
-          color: $primary;
-        }
+    .nav-item {
+      .nav-link {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
       }
-    }
-  }
-  .navbar-toggler {
-    font-size: 80%;
-    padding: 0.8rem;
-  }
-}
-@media(min-width:992px) {
-  #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    .navbar-brand {
-      font-size: 2em;
-      -webkit-transition: font-size 0.3s;
-      -moz-transition: font-size 0.3s;
-      transition: font-size 0.3s;
-    }
-    .navbar-nav {
-      margin-top: 0;
-    }
-    .navbar-nav > li.nav-item > a.nav-link.active {
-      color: $white;
-      background: $primary;
-      &:active,
-      &:focus,
-      &:hover {
-        color: $white;
-        background: $primary;
-      }
-    }
-  }
-  #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    .navbar-brand {
-      font-size: 1.5em;
     }
   }
 }
