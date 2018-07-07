@@ -31,7 +31,7 @@ h6 {
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7)
 }
 
 .navbar-custom .navbar-brand {
@@ -57,7 +57,7 @@ header.masthead {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: cover
 }
 
 header.masthead .masthead-content {
@@ -74,10 +74,10 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 header.masthead .bg-circle {
-  z-index: 0;
-  position: absolute;
-  border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+      z-index: 0;
+      position: absolute;
+      border-radius: 100%;
+      background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%)
 }
 
 header.masthead .bg-circle-1 {
