@@ -1,0 +1,2 @@
+07/12/18 - Stephen: Node server works now for hosting all the static webpages on localhost
+  also I set up a basic angular routing system and moved all the front end stuff to a folder named views.
