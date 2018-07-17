@@ -109,3 +109,24 @@ a:hover {
 #loginBtn{
     background-color: black;
 }
+
+.modal-content {
+    background-color: black;
+}
+
+.form-control {
+    background: #30373a;
+    color: orange;
+}
+
+.close {
+    color: white;
+}
+.close:hover {
+    color: orange;
+}
+
+#submitButton {
+    background: linear-gradient(to bottom right, red, yellow);
+    border-color: black;
+}
