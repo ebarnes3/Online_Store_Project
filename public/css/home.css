@@ -89,3 +89,66 @@
     margin-top: 7rem;
   }
 }
+
+/* Custom CSS
+-------------------------------------------------- */
+#logo {
+    background-color: white;
+    border-radius: 20%;
+    margin: 0px 25px;
+}
+
+
+#account-cart {
+    position: relative;
+    left: 200px;
+}
+
+#accountLabel {
+    color: darkgrey;
+    margin-right: 20px;
+}
+
+#accountLabel:hover {
+    color: orange;
+}
+
+#cartLabel {
+    color: darkgrey;
+}
+
+#cartLabel:hover {
+    color: orange;
+}
+
+#categories-search {
+    position: relative;
+    left: 200px;
+}
+
+#categoriesLabel {
+    color: white;
+    margin-right: 2px;
+}
+
+#searchButton {
+    color: orange;
+    border-color: orange;
+    background-color: transparent;
+}
+
+#searchButton:hover {
+     color: black;
+     background: linear-gradient(to bottom right, red, yellow);
+}
+#dropdown {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    background: linear-gradient(to bottom right, red, yellow);
+    color: black;
+}
