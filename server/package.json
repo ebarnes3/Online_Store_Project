@@ -1,0 +1,22 @@
+{
+  "name": "csc4370-project",
+  "version": "1.0.0",
+  "description": "CSC4370 Group Project: Online Store: Back end",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "Eric Barnes, Eric Smith, Stephen Burgess",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ebarnes3/Online_Store_Project.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.18.1"
+  }
+}
