@@ -6,6 +6,10 @@ mainController.$inject = ["$scope", "$http"];
 
 function mainController($scope, $http) {
 
+
+
+
+
     $http.get("http://localhost:3000/api/getChairs").then(function(data) {
         console.log(data.data);
         $scope.chairs = data.data;
@@ -15,16 +19,25 @@ function mainController($scope, $http) {
         console.log(data.data);
         $scope.electronics = data.data;
     });
-    user = {
-             "id": "",
-             "username" : "",
-             "password":""
-         }
+
+    $http.get("http://localhost:3000/api/getInstruments").then(function(data) {
+        console.log(data.data);
+        $scope.instruments = data.data;
+    });
+    // user = {
+    //          "id": "",
+    //          "username" : "",
+    //          "password":""
+    //      }
+
 
     $scope.insertUsers= function(user){
-        console.log('user');
-        $http.post("http://localhost:3000/api/updateUsers",  home).then(function(data){
+        console.log(user);
+        $http.post("http://localhost:3000/api/insertUsers",  user).then(function(data){
             console.log(data);
+            alert('Registration Completed!')
         });
+
+
 }
 };

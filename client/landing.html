@@ -73,7 +73,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">@</span>
                                 </div>
-                                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                <input type="text" class="form-control" id="username" placeholder="Username" ng-model ="user.username" required>
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Your username is required.
                                 </div>
@@ -84,7 +84,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                 </div>
-                                <input type="text" class="form-control" id="password" placeholder="Password" name ="user.password" required>
+                                <input type="text" class="form-control" id="password" placeholder="Password" ng-model ="user.password" required>
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Your password is required.
                                 </div>
@@ -196,7 +196,7 @@
                             </div>
                         </div>
                         <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" id="submitButton" type="submit">Submit Registration</button>
+                        <button class="btn btn-primary btn-lg btn-block" ng-click="insertUsers(user)" id="submitButton" type="submit">Submit Registration</button>
                     </form>
                 </div>
             </div>
