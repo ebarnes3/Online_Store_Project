@@ -36,21 +36,89 @@
 }
 
 /*custom changes here*/
-#logo {
+/*#logo {
     background-color: white;
     border-radius: 23%;
+    margin: 0px 25px;
+}*/
+#logo {
+    background-color: white;
+    border-radius: 20%;
     margin: 0px 25px;
 }
 
 
-#test {
+#account-cart {
     position: relative;
-    top: 25px;;
+    left: 200px;
+}
+
+#accountLabel {
+    color: darkgrey;
+    margin-right: 20px;
+}
+
+    #accountLabel:hover {
+        color: orange;
+    }
+
+#cartLabel {
+    color: darkgrey;
+}
+
+    #cartLabel:hover {
+        color: orange;
+    }
+
+#categories-search {
+    position: relative;
+    left: 200px;
+}
+
+#categoriesLabel {
+    color: white;
+    margin-right: 2px;
+}
+
+#searchButton {
+    color: orange;
+    border-color: orange;
+    background-color: transparent;
+}
+
+#searchButton:hover {
+        color: black;
+        background: linear-gradient(to bottom right, red, yellow);
+}
+
+#dropdown {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+        background: linear-gradient(to bottom right, red, yellow);
+        color: black;
+}
+
+#catelog {
+    position: relative;
+    top: 35px;;
+}
+
+.list-group {
+    position: relative;
+    top: 35px;
+    left: 15px;
 }
 .page-item {
     position: relative;
     top: 50px;
 }
+
 .pagination {
     display: -ms-flexbox;
     display: flex;k
