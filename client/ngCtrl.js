@@ -1,10 +1,10 @@
 app.controller("ngCtrl", mainController);
 
 
-mainController.$inject = ["$scope", "$http"];
+mainController.$inject = ["$scope", "$http","$location"];
 
 
-function mainController($scope, $http) {
+function mainController($scope, $http, $location) {
 
     $http.get("http://localhost:3000/api/getChairs").then(function(data) {
         console.log(data.data);
@@ -17,14 +17,44 @@ function mainController($scope, $http) {
     });
     user = {
              "id": "",
-             "username" : "",
+             "username" : "hey",
              "password":""
          }
 
-    $scope.insertUsers= function(user){
-        console.log('user');
-        $http.post("http://localhost:3000/api/updateUsers",  home).then(function(data){
-            console.log(data);
-        });
-}
+    $scope.insertUsers = (user) => {
+
+      $http.post("http://localhost:3000/api/insertUsers",  user).then(function(data){
+        console.log(data);
+        alert('Registration Completed!')
+      });
+    }
+
+
+
+    $scope.login = {
+      'username' : '',
+      'password' : ''
+    };
+
+    $scope.confirmLogin = () => {
+      //alert($scope.login.username);
+      $http.get("http://localhost:3000/api/getUsers",  user).then(function(data){
+        $scope.users = data.data;
+        for(x in $scope.users){
+          if($scope.users[x].username == $scope.login.username) {
+            if($scope.users[x].password == $scope.login.password){
+              // change view to home page
+              $location.path('home');
+            }
+            else {
+              alert('Password is incorrect');
+            }
+          }
+          else {
+            alert('Username does not exist');
+          }
+        }
+      });
+    }
+
 };
