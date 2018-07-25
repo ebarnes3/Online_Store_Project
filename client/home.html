@@ -33,6 +33,9 @@
               <li class="nav-item">
                 <a class="nav-link active dropdown-toggle" href="" id="accountLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
                 <div class="dropdown-menu p-2" aria-labelledby="dropdown03">
+                  <form action="#!/account">
+                      <input type="submit" value="My Account" />
+                  </form>
                     <label for="exampleDropdownFormEmail2">Change Password:</label>
                     <form class="form-signin" ng-submit="changePassword()">
                         <div class="form-group">
@@ -52,7 +55,7 @@
                 </div>
               </li>
                 <li class="nav-item">
-                    <a id="cartLabel" href="cart.html">Cart</a>
+                    <a id="cartLabel" href="#!/cart">Cart</a>
                 </li>
             </ul>
         </div>
