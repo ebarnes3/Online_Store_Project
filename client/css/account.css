@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+
+.container-fluid {
+    color: white;
+}
+
+.info {
+    margin: 20px 140px;
+    height: 300px;
+    border-style: groove;
+    border-width: 4px;
+    border-color: orange;
+    border-radius:30px;
+}
+ul {
+    list-style-type: none;
+}
+
+#nameLabel {
+    width: 30%;
+    color: white;
+}
+
+#name {
+    color: white;
+    float: right;
+    position: relative;
+    bottom: 54px;
+    right: 250px;
+    height: 40px;
+    text-align: center;
+    width: 30%;
+
+}
+
+#emailLabel {
+    width: 30%;
+    color: white;
+}
+
+#email {
+    color: white;
+    float: right;
+    position: relative;
+    bottom: 54px;
+    right: 250px;
+    height: 40px;
+    text-align: center;
+    width: 30%;
+}
+
+#addressLabel {
+    width: 30%;
+    color: white;
+}
+
+#address {
+    color: white;
+    float: right;
+    position: relative;
+    bottom: 54px;
+    right: 250px;
+    height: 40px;
+    text-align: center;
+    width: 30%;
