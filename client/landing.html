@@ -7,14 +7,14 @@
                     <!--<a class="nav-link active" data-toggle="modal" href="#signUpModal">Sign-Up</a>-->
                     <a class="nav-link active dropdown-toggle" href="" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
                     <div class="dropdown-menu p-2" aria-labelledby="dropdown03">
-                        <form class="form-signin" action="#!/home">
+                        <form class="form-signin" ng-submit="confirmLogin()">
                             <div class="form-group">
-                                <label for="exampleDropdownFormEmail2">Email address</label>
-                                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                                <label for="exampleDropdownFormEmail2">Username</label>
+                                <input ng-model="login.username" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username">
                             </div>
                             <div class="form-group">
                                 <label for="exampleDropdownFormPassword2">Password</label>
-                                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                                <input ng-model="login.password" type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="dropdownCheck2">
@@ -48,7 +48,7 @@
                     <button class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form class="needs-validation" novalidate>
+                    <form ng-submit="insertUsers()" class="needs-validation" novalidate>
                         <center>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -73,7 +73,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">@</span>
                                 </div>
-                                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                <input ng-model="user.username" type="text" class="form-control" id="username" placeholder="Username" required>
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Your username is required.
                                 </div>
@@ -84,7 +84,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                 </div>
-                                <input type="text" class="form-control" id="password" placeholder="Password" name ="user.password" required>
+                                <input ng-model="user.password" type="text" class="form-control" id="password" placeholder="Password" name ="user.password" required>
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Your password is required.
                                 </div>
