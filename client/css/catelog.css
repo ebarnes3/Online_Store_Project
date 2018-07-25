@@ -47,10 +47,26 @@
     margin: 0px 25px;
 }
 
+#navWrap {
+    width: 70%;
+}
+
+#categoryLabel {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-family: Optima, sans-serif;
+    left: 41%;
+}
+#navbarCollapse {
+    display: inline-block;
+    float: right;
+    width: 25%;
+}
 
 #account-cart {
     position: relative;
-    left: 200px;
+    float: right;
 }
 
 #accountLabel {
@@ -58,9 +74,9 @@
     margin-right: 20px;
 }
 
-    #accountLabel:hover {
+#accountLabel:hover {
         color: orange;
-    }
+}
 
 #cartLabel {
     color: darkgrey;
