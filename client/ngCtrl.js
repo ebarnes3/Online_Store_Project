@@ -27,6 +27,8 @@ function mainController($scope, $http, $location, $route) {
       $http.post("http://localhost:3000/api/insertUsers", $scope.user).then(function(data){
           console.log(data.data);
       });
+      $('#signUpModal').modal('hide');
+      //$location.path('home');
     }
     //...............................
 
@@ -63,4 +65,38 @@ function mainController($scope, $http, $location, $route) {
       });
     }
     //....................................
+
+    // Password update...............
+    $scope.update = {
+      'usernamme' : '',
+      'password' : '',
+      'newPass' : ''
+    }
+
+    $scope.changePassword = () => {
+      $http.get("http://localhost:3000/api/getUsers").then(function(data){
+
+        $scope.users = data.data;
+        var i = 0;
+        for(x in $scope.users){
+          if($scope.users[x].username == $scope.update.username) {
+            i=1;
+            if($scope.users[x].password == $scope.update.password){
+              // replace password with newPass
+              $http.post("http://localhost:3000/api/updatePassword", $scope.update).then(function(data){
+                  alert(data.data);
+              });
+
+            }
+            else {
+              alert('Password is incorrect');
+              break;
+            }
+          }
+        }
+        if(i==0){
+          alert('username does not exist');
+        }
+      });
+    }
 };
