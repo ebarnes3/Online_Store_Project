@@ -44,8 +44,7 @@ router.get('/getUsers', (req, res, next) => {
 })
 
 router.post('/insertUsers', (req, res, next) => {
-    var username = req.body.username;
-    var password = req.body.password;
+    
 
     con.con.query("INSERT INTO `users` (`id`, `username`, `password`) VALUES ('NULL', '"+req.body.username+"', '"+req.body.password+"'); ", function(err, result, fields){
         if (err) throw err;
