@@ -44,12 +44,21 @@ router.get('/getUsers', (req, res, next) => {
 })
 
 router.post('/insertUsers', (req, res, next) => {
-    
 
     con.con.query("INSERT INTO `users` (`id`, `username`, `password`) VALUES ('NULL', '"+req.body.username+"', '"+req.body.password+"'); ", function(err, result, fields){
         if (err) throw err;
         console.log(result);
         res.send('Successfully inserted users ');
+    })
+
+});
+
+router.post('/updatePassword', (req, res, next) => {
+    console.log(req.body.newPass);
+    con.con.query("UPDATE users SET password='"+req.body.newPass+"' WHERE username='"+req.body.username+"'", function(err, result, fields){
+        if (err) throw err;
+        console.log(result);
+        res.send('Password Updated');
     })
 
 });
