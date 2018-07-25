@@ -5,11 +5,15 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   /*color: #5a5a5a;*/
-  color: green;
-  background-color: white;
+  color: orange;
+  background-color: black;
 }
 
-
+hr {
+    width: 90%; /* Line width */
+    background-color: white; /* Line color */
+    height: 1px; /* Override in-line if you want specific height. */
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -36,6 +40,9 @@
   height: 32rem;
 }
 
+#slide2 {
+   
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -115,6 +122,8 @@
 }
 
 #cartLabel {
+    position: relative;
+    top: 8px;
     color: darkgrey;
 }
 
