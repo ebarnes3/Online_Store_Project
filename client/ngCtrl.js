@@ -27,6 +27,8 @@ function mainController($scope, $http, $location, $route) {
       $http.post("http://localhost:3000/api/insertUsers", $scope.user).then(function(data){
           console.log(data.data);
       });
+      $('#signUpModal').modal('hide');
+      //$location.path('home');
     }
     //...............................
 
