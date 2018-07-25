@@ -82,9 +82,9 @@
     color: darkgrey;
 }
 
-    #cartLabel:hover {
+ #cartLabel:hover {
         color: orange;
-    }
+ }
 
 #categories-search {
     position: relative;
