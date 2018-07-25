@@ -152,7 +152,6 @@
 }
 
 .dropdown-item:hover {
-<<<<<<< HEAD
      background: linear-gradient(to bottom right, red, yellow);
      color: black;
 }
@@ -160,8 +159,4 @@
 .row featurette {
     background-color: white;
 }
-=======
-        background: linear-gradient(to bottom right, red, yellow);
-        color: black;
-}
->>>>>>> 642e50d5b15a7e8b4c0fc17fd697e44dacc61b2a
+
