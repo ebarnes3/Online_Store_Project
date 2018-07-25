@@ -110,6 +110,10 @@ a:hover {
     background-color: black;
 }
 
+#aboutLabel{
+  margin-left: 20px;
+}
+
 .modal-content {
     background-color: black;
 }

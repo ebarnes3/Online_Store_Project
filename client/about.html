@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>CSC4370 Project, by Eric Barnes, Eric Smith, and Stephen Burgess.<h1>
+<h1>Github Link: <a href="https://github.com/ebarnes3/Online_Store_Project">Online Store: CSC4370 Project</a></h1>
+<h1>Where to find us: </h1>
+
+<style>
+  body {background-image: url('../img/landing.jpg');}
+  body {background-color: powderblue;}
+  h1   {color: black;}
+  p    {color: black;}
+</style>
+
+<div id="googleMap" style="border-style: solid;;width:400px;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(33.753068,-84.3874706),
+    zoom:15,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5IzODvs6HMkIRtoK9YWLhFzo992yQr_o&callback=myMap"></script>
+
+</body>
+</html>
